@@ -1,0 +1,181 @@
+<!DOCTYPE html>  
+<html lang="fa" dir="rtl">  
+<head>  
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">          
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/respancive.css">
+    <script src="js/jquery.3.7.1.min.js"></script>
+    <title>modal با bootstrap</title>  
+</head>  
+<body>  
+    <nav id="#nav" class="navbar navbar-extend-lg top-0 position-sticky ">
+        <div class="row w-100 justify-content-between">
+            <div class="nav-right col-10 text-end">
+                <div class="row w-100">
+                    <div class="brand col-1 ms-4 me-0">
+                        <img src="images/academy-logo.3932587c.svg" class=" pt-0 pe-0" alt="">
+                    </div>
+                    <div class="nav-links col-10 pt-2">
+                        <a href="#" class="start-link text-white"> شروع</a>
+                        <a href="#" class="nav-link2"> دسته بندی</a>
+                        <a href="#" class="navlink3 dropdown-toggle" id="dropdawnmanage" data-bs-toggle="dropdown"
+                            aria-expanded="false" aria-haspopup="true"> بازگشت به نوبیتکس</a>
+                        <div class="dropdown-menu pt-3 text-end" aria-labelledby="dropdownmanage">
+                            <a href="" class="dropdown-item ">صرافی نوبیتکس</a>
+                            <a href="" class="dropdown-item">لاکت ولت</a>
+                            <a href="" class="dropdown-item">نوبیتکس لبز</a>
+                            <a href="" class="dropdown-item">مجله</a>
+                        </div>
+                        <a href="#" class="nav-link4">لیست ویدیوها</a>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-left col-2 text-white pt-2 ps-0 text-start">
+                <!-- <button class="singin-btn">ورود و ثبت نام</button> -->
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- <div class="container mt-5">  
+    <div class="accordion" id="accordionExample">  
+        <div class="accordion-item">  
+            <h2 class="accordion-header" id="headingOne">  
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">  
+                    عنوان ۱  
+                </button>  
+            </h2>  
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">  
+                <div class="accordion-body">  
+                    محتوای آکاردیون ۱  
+                </div>  
+            </div>  
+        </div>  
+        <div class="accordion-item">  
+            <h2 class="accordion-header" id="headingTwo">  
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">  
+                    عنوان ۲  
+                </button>  
+            </h2>  
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">  
+                <div class="accordion-body">  
+                    محتوای آکاردیون ۲  
+                </div>  
+            </div>  
+        </div>  
+        <div class="accordion-item">  
+            <h2 class="accordion-header" id="headingThree">  
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">  
+                    عنوان ۳  
+                </button>  
+            </h2>  
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">  
+                <div class="accordion-body">  
+                    محتوای آکاردیون ۳  
+                </div>  
+            </div>  
+        </div>  
+    </div>  
+</div>   -->
+
+
+
+
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                Accordion Item #1
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                the collapse plugin adds the appropriate classes that we use to style each element.
+                These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default
+                variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Accordion Item #2
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                until the collapse plugin adds the appropriate classes that we use to style each
+                element. These classes control the overall appearance, as well as the showing and hiding
+                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                default variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Accordion Item #3
+            </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                the collapse plugin adds the appropriate classes that we use to style each element.
+                These classes control the overall appearance, as well as the showing and hiding via CSS
+                transitions. You can modify any of this with custom CSS or overriding our default
+                variables. It's also worth noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>  
+</html>
